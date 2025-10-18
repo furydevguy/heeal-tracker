@@ -1,0 +1,46 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "customConditions": [
+      "react-native"
+    ],
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@app": ["app"],
+      "@app/*": ["app/*"],
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"],
+      "@lib": ["app/lib"],
+      "@lib/*": ["app/lib/*"],
+      "@provider": ["app/provider"],
+      "@provider/*": ["app/provider/*"],
+      "@features": ["app/features"],
+      "@features/*": ["app/features/*"],
+      "@ui": ["components/ui"],
+      "@ui/*": ["components/ui/*"],
+      "@config": ["app/config"],
+      "@config/*": ["app/config/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+      "@chat": ["app/(features)/chat"],
+      "@chat/*": ["app/(features)/chat/*"],
+      "@habits": ["app/features/habits"],
+      "@habits/*": ["app/features/habits/*"],
+      "@firebase/auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"]
+    }
+  },
+  "include": [
+    "app",
+    "app.config.ts",
+    "components",
+    "**/*.ts",
+    "**/*.tsx",
+    "metro.config.js"
+, "aura-ai/validate-private-key.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
