@@ -2,6 +2,9 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+aura-wellness-coach(V0.1): This is made by tanker
+
+
 ## Get started
 
 1. Install dependencies
